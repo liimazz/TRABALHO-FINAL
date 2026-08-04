@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+Login - MuralTech
+{% endblock %}
+
+{% block conteudo %}
+<div class="container py-5 fade-up">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+            <div class="form-container">
+
+                <div class="text-center mb-4">
+                    <i class="bi bi-shield-lock-fill display-4 text-primary"></i>
+                    <h2 class="fw-bold mt-3">Área Administrativa</h2>
+                    <p class="text-muted">Faça login para gerenciar os avisos</p>
+                </div>
+
+                <form method="POST">
+                    <div class="mb-3">
+                        <label class="form-label">
+                            <i class="bi bi-person-fill"></i> Usuário
+                        </label>
+                        <input type="text" name="usuario" class="form-control"
+                               placeholder="Digite o usuário" required autofocus>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label">
+                            <i class="bi bi-lock-fill"></i> Senha
+                        </label>
+                        <input type="password" name="senha" class="form-control"
+                               placeholder="Digite a senha" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 mb-3">
+                        <i class="bi bi-box-arrow-in-right"></i> Entrar
+                    </button>
+
+                    <div class="text-center">
+                        <a href="{{ url_for('index') }}" class="text-muted">
+                            <i class="bi bi-arrow-left"></i> Voltar ao site
+                        </a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,1336 @@
+/* ===========================================
+   MuralTech 2.0
+   Desenvolvido por Kawan
+=========================================== */
+
+
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* =========================
+        VARIÁVEIS
+=========================*/
+
+:root{
+
+    --primary:#2563eb;
+    --secondary:#3b82f6;
+    --success:#10b981;
+    --warning:#f59e0b;
+    --danger:#ef4444;
+
+    --background:#f5f7fb;
+    --surface:#ffffff;
+
+    --text:#1e293b;
+    --text2:#64748b;
+
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+    --radius:18px;
+
+}
+
+
+/* Tema Escuro */
+
+[data-theme="dark"]{
+
+    --background:#0f172a;
+
+    --surface:#1e293b;
+
+    --text:#f8fafc;
+
+    --text2:#cbd5e1;
+
+    --shadow:0 10px 35px rgba(0,0,0,.45);
+
+}
+
+
+
+/* =========================
+        GERAL
+=========================*/
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    transition:.35s;
+
+}
+
+
+.container{
+
+    max-width:1200px;
+
+}
+
+
+
+/* =========================
+        NAVBAR
+=========================*/
+
+.navbar{
+
+    background:var(--surface)!important;
+
+    box-shadow:var(--shadow);
+
+    padding:18px 0;
+
+    transition:.3s;
+
+}
+
+
+.navbar-brand{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:var(--primary)!important;
+
+}
+
+
+.nav-link{
+
+    font-weight:500;
+
+    color:var(--text)!important;
+
+    margin-left:18px;
+
+    transition:.25s;
+
+}
+
+
+.nav-link:hover{
+
+    color:var(--primary)!important;
+
+}
+
+
+.navbar-toggler{
+
+    border:none;
+
+}
+
+
+
+/* =========================
+      BOTÃO TEMA
+=========================*/
+
+.theme-btn{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:var(--primary);
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.theme-btn:hover{
+
+    transform:rotate(180deg);
+
+    background:#1d4ed8;
+
+}
+
+
+
+/* =========================
+        HERO
+=========================*/
+
+.hero{
+
+    margin-top:35px;
+
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+
+    color:white;
+
+    padding:70px;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    right:-120px;
+
+    top:-120px;
+
+}
+
+
+.hero h1{
+
+    font-size:52px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+
+.hero p{
+
+    font-size:18px;
+
+    max-width:650px;
+
+    opacity:.95;
+
+}
+
+
+.hero .btn{
+
+    margin-top:25px;
+
+    margin-right:15px;
+
+    border-radius:14px;
+
+    padding:12px 28px;
+
+    font-weight:600;
+
+}
+
+
+
+/* =========================
+      ESTATÍSTICAS
+=========================*/
+
+.stats{
+
+    margin-top:45px;
+
+}
+
+
+.stat-card{
+
+    background:var(--surface);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+.stat-card i{
+
+    font-size:48px;
+
+    color:var(--primary);
+
+}
+
+
+.stat-card h2{
+
+    margin-top:20px;
+
+    font-size:40px;
+
+    font-weight:700;
+
+}
+
+
+.stat-card span{
+
+    color:var(--text2);
+
+}
+
+
+
+/* =========================
+        CARDS
+=========================*/
+
+.card{
+
+    border:none;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+    background:var(--surface);
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+.card-title{
+
+    font-weight:600;
+
+}
+
+
+.card-text{
+
+    color:var(--text2);
+
+}
+
+
+
+/* =========================
+        BOTÕES
+=========================*/
+
+.btn{
+
+    border-radius:12px;
+
+    padding:10px 24px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+.btn-primary{
+
+    background:var(--primary);
+
+    border:none;
+
+}
+
+
+.btn-primary:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+.btn-success{
+
+    border:none;
+
+}
+
+
+.btn-warning{
+
+    color:white;
+
+}
+
+
+.btn-danger{
+
+    border:none;
+
+}
+
+/* ===========================================
+        FORMULÁRIOS
+===========================================*/
+
+.form-container{
+
+    background:var(--surface);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:var(--shadow);
+
+    margin-top:35px;
+
+}
+
+.form-label{
+
+    font-weight:600;
+
+    color:var(--text);
+
+}
+
+.form-control,
+.form-select{
+
+    border-radius:12px;
+
+    border:2px solid #dbe4f0;
+
+    padding:14px;
+
+    transition:.3s;
+
+    background:var(--surface);
+
+    color:var(--text);
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 .2rem rgba(37,99,235,.20);
+
+    background:var(--surface);
+
+    color:var(--text);
+
+}
+
+
+
+/* ===========================================
+            BARRA DE PESQUISA
+===========================================*/
+
+.search-box{
+
+    margin:30px 0;
+
+}
+
+.search-box .input-group{
+
+    background:var(--surface);
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+}
+
+.search-box input{
+
+    border:none;
+
+    background:transparent;
+
+    padding:16px;
+
+    color:var(--text);
+
+}
+
+.search-box input:focus{
+
+    box-shadow:none;
+
+}
+
+.search-box button{
+
+    border:none;
+
+    padding:0 30px;
+
+}
+
+
+
+/* ===========================================
+            CARDS DOS AVISOS
+===========================================*/
+
+.notice-card{
+
+    background:var(--surface);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+    height:100%;
+
+}
+
+.notice-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.notice-card h4{
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+    color:var(--text);
+
+}
+
+.notice-card p{
+
+    color:var(--text2);
+
+    line-height:1.7;
+
+}
+
+
+
+/* ===========================================
+            CATEGORIAS
+===========================================*/
+
+.badge{
+
+    border-radius:30px;
+
+    padding:8px 16px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.badge-evento{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.badge-prova{
+
+    background:#ef4444;
+
+    color:white;
+
+}
+
+.badge-reunião{
+
+    background:#10b981;
+
+    color:white;
+
+}
+
+.badge-outro{
+
+    background:#64748b;
+
+    color:white;
+
+}
+
+
+
+/* ===========================================
+            BOTÕES DOS CARDS
+===========================================*/
+
+.card-actions{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+.card-actions .btn{
+
+    flex:1;
+
+}
+
+
+
+/* ===========================================
+            ALERTAS
+===========================================*/
+
+.alert{
+
+    border:none;
+
+    border-radius:15px;
+
+    padding:18px;
+
+    font-weight:500;
+
+    box-shadow:var(--shadow);
+
+}
+
+.alert-success{
+
+    background:#dcfce7;
+
+    color:#166534;
+
+}
+
+.alert-danger{
+
+    background:#fee2e2;
+
+    color:#991b1b;
+
+}
+
+.alert-warning{
+
+    background:#fef3c7;
+
+    color:#92400e;
+
+}
+
+.alert-info{
+
+    background:#dbeafe;
+
+    color:#1d4ed8;
+
+}
+
+
+
+/* ===========================================
+            LISTA
+===========================================*/
+
+.list-group{
+
+    border:none;
+
+}
+
+.list-group-item{
+
+    border:none;
+
+    margin-bottom:12px;
+
+    border-radius:12px;
+
+    background:var(--surface);
+
+    color:var(--text);
+
+    box-shadow:var(--shadow);
+
+}
+
+
+
+/* ===========================================
+            RODAPÉ
+===========================================*/
+
+footer{
+
+    margin-top:80px;
+
+    background:var(--surface);
+
+    padding:40px;
+
+    text-align:center;
+
+    color:var(--text2);
+
+    box-shadow:0 -5px 20px rgba(0,0,0,.05);
+
+}
+
+footer h5{
+
+    color:var(--text);
+
+    font-weight:700;
+
+}
+
+footer i{
+
+    color:var(--primary);
+
+    font-size:22px;
+
+}
+
+
+
+/* ===========================================
+            ANIMAÇÕES
+===========================================*/
+
+.fade-up{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ===========================================
+            RESPONSIVO
+===========================================*/
+
+@media(max-width:992px){
+
+.hero{
+
+    padding:50px 30px;
+
+}
+
+.hero h1{
+
+    font-size:38px;
+
+}
+
+.stat-card{
+
+    margin-bottom:20px;
+
+}
+
+}
+
+
+
+@media(max-width:768px){
+
+.hero{
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-size:32px;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.navbar-brand{
+
+    font-size:24px;
+
+}
+
+.card{
+
+    margin-bottom:20px;
+
+}
+
+.form-container{
+
+    padding:25px;
+
+}
+
+.card-actions{
+
+    flex-direction:column;
+
+}
+
+}
+
+
+
+@media(max-width:576px){
+
+.hero{
+
+    padding:35px 20px;
+
+}
+
+.hero h1{
+
+    font-size:28px;
+
+}
+
+.btn{
+
+    width:100%;
+
+    margin-bottom:10px;
+
+}
+
+}
+
+/* ===========================================
+        MODO ESCURO - COMPONENTES
+===========================================*/
+
+[data-theme="dark"] .navbar{
+
+    background:#111827 !important;
+
+}
+
+[data-theme="dark"] .hero{
+
+    background:linear-gradient(135deg,#1d4ed8,#2563eb);
+
+}
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .notice-card,
+[data-theme="dark"] .form-container,
+[data-theme="dark"] footer{
+
+    background:#1e293b;
+
+    color:#f8fafc;
+
+}
+
+[data-theme="dark"] .list-group-item{
+
+    background:#334155;
+
+    color:#f8fafc;
+
+}
+
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select{
+
+    background:#334155;
+
+    border-color:#475569;
+
+    color:#f8fafc;
+
+}
+
+[data-theme="dark"] .form-control::placeholder{
+
+    color:#94a3b8;
+
+}
+
+[data-theme="dark"] .form-control:focus,
+[data-theme="dark"] .form-select:focus{
+
+    background:#334155;
+
+    color:white;
+
+}
+
+/* ===== CORREÇÃO PRINCIPAL DO CONTRASTE ===== */
+[data-theme="dark"] .text-muted,
+[data-theme="dark"] .card-text,
+[data-theme="dark"] p,
+[data-theme="dark"] small,
+[data-theme="dark"] .text-body-secondary {
+    color: #cbd5e1 !important;
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6{
+
+    color:white;
+
+}
+
+/* Alertas no modo escuro */
+[data-theme="dark"] .alert-success{
+    background:#064e3b;
+    color:#a7f3d0;
+}
+
+[data-theme="dark"] .alert-danger{
+    background:#7f1d1d;
+    color:#fecaca;
+}
+
+[data-theme="dark"] .alert-warning{
+    background:#78350f;
+    color:#fde68a;
+}
+
+[data-theme="dark"] .alert-info{
+    background:#1e3a8a;
+    color:#bfdbfe;
+}
+
+
+
+/* ===========================================
+        BOTÃO VOLTAR AO TOPO
+===========================================*/
+
+#topo{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    display:none;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+#topo:hover{
+
+    transform:translateY(-6px);
+
+}
+
+
+
+/* ===========================================
+        SCROLLBAR
+===========================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:var(--background);
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+
+/* ===========================================
+        SELEÇÃO DE TEXTO
+===========================================*/
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+
+/* ===========================================
+        ANIMAÇÕES
+===========================================*/
+
+.fade{
+
+    animation:fade .8s;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+
+
+.zoom{
+
+    animation:zoom .5s;
+
+}
+
+@keyframes zoom{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.95);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+
+/* ===========================================
+        HOVER DOS CARDS
+===========================================*/
+
+.notice-card:hover .badge{
+
+    transform:scale(1.05);
+
+    transition:.3s;
+
+}
+
+.notice-card:hover h4{
+
+    color:var(--primary);
+
+}
+
+
+
+/* ===========================================
+        ÍCONES
+===========================================*/
+
+.bi{
+
+    transition:.3s;
+
+}
+
+.card:hover .bi{
+
+    transform:scale(1.15);
+
+}
+
+
+
+/* ===========================================
+        DIVISORES
+===========================================*/
+
+hr{
+
+    border:none;
+
+    height:1px;
+
+    background:#dbe4f0;
+
+    margin:60px 0;
+
+}
+
+[data-theme="dark"] hr{
+
+    background:#334155;
+
+}
+
+
+
+/* ===========================================
+        LINKS
+===========================================*/
+
+a{
+
+    text-decoration:none;
+
+}
+
+a:hover{
+
+    text-decoration:none;
+
+}
+
+
+
+/* ===========================================
+        IMAGENS
+===========================================*/
+
+img{
+
+    max-width:100%;
+
+    border-radius:18px;
+
+}
+
+
+
+/* ===========================================
+        TABELAS
+===========================================*/
+
+table{
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+thead{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+
+/* ===========================================
+        TRANSIÇÃO GLOBAL
+===========================================*/
+
+body,
+.card,
+.notice-card,
+.navbar,
+footer,
+.form-control,
+.form-select,
+.list-group-item,
+.hero{
+
+    transition:.35s;
+
+}
+
+#tema {
+
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+
+}
+
+
+#tema:hover {
+
+    opacity: 0.8;
+
+}
+
+
+/* =========================
+      BOTÃO DE TEMA
+========================= */
+
+.theme-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:45px;
+    height:45px;
+
+    border:none;
+    border-radius:50%;
+
+    background:var(--primary);
+    color:#fff;
+
+    cursor:pointer;
+    font-size:20px;
+
+    transition:.3s;
+}
+
+.theme-btn:hover{
+    background:#1d4ed8;
+    transform:rotate(180deg);
+}

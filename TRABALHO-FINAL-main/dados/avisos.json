@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "titulo": "Feira de Ciências 2026",
+        "categoria": "Evento",
+        "descricao": "A Feira de Ciências acontecerá no dia 22 de agosto, às 8h, no auditório da escola. Todos os alunos estão convidados a participar.",
+        "data": "04/08/2026 às 18:42 (Editado)",
+        "fixado": false
+    },
+    {
+        "id": 2,
+        "titulo": "Prova de Matemática",
+        "categoria": "Prova",
+        "descricao": "A avaliação será realizada na próxima terça-feira. Não esqueça de levar o material necessário.",
+        "data": "03/08/2026 às 14:30",
+        "fixado": false
+    },
+    {
+        "id": 3,
+        "titulo": "Reunião de Pais",
+        "categoria": "Reunião",
+        "descricao": "A reunião será realizada na sexta-feira, às 19h, para apresentar o desempenho dos alunos.",
+        "data": "02/08/2026 às 09:15",
+        "fixado": true
+    },
+    {
+        "id": 4,
+        "titulo": "Jogos Interclasses",
+        "categoria": "Esporte",
+        "descricao": "As inscrições para os Jogos Interclasses estão abertas até o final desta semana.",
+        "data": "01/08/2026 às 16:00",
+        "fixado": false
+    },
+    {
+        "id": 5,
+        "titulo": "Biblioteca",
+        "categoria": "Informativo",
+        "descricao": "Novos livros foram adicionados ao acervo da biblioteca. Faça sua visita e aproveite as novidades.",
+        "data": "31/07/2026 às 11:20",
+        "fixado": false
+    },
+    {
+        "id": 6,
+        "titulo": "Curso de Programação",
+        "categoria": "Curso",
+        "descricao": "Inscrições abertas para o curso básico de Python. As vagas são limitadas.",
+        "data": "30/07/2026 às 08:45",
+        "fixado": false
+    },
+    {
+        "id": 7,
+        "titulo": "Trabalho de T.I",
+        "categoria": "Curso",
+        "descricao": "Criação de site; de acordo com uma situação problema.",
+        "data": "04/08/2026 às 18:42",
+        "fixado": true
+    }
+]
